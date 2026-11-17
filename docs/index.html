@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14141a">
+  <meta name="description" content="WorldRuler connects executable rules, persistent world states, and visual generation to build interactive worlds under configurable rules.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WorldRuler — Interactive World Modeling under Configurable Rules">
+  <meta property="og:description" content="Define the rules. Ground their effects. Preserve the world. Explore WorldRuler and the RuleVerse dataset.">
+  <meta property="og:url" content="https://alaya-lab.github.io/WorldRuler/">
+  <meta property="og:image" content="https://alaya-lab.github.io/WorldRuler/assets/images/social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://alaya-lab.github.io/WorldRuler/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="walkthrough.css?v=retake34-accumulated-2">
+  <script src="showcase-data.js?v=approved-20261115" defer></script>
+  <script src="script.js" defer></script>
+  <script src="walkthrough.js?v=combat-v2-20261117" defer></script>
+  <script type="module" src="pdf-figures.js"></script>
+  <title>WorldRuler — Interactive World Modeling under Configurable Rules</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="WorldRuler home"><span class="lab-mark">ALAYA LAB</span><span class="brand-divider"></span>WorldRuler<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">＋</span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#overview">Overview</a><a href="#method">Method</a><a href="#showcase">Showcase</a><a href="#ruleverse">RuleVerse</a>
+    </nav>
+    <a class="nav-cta" href="#citation">Citation <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <video id="hero-video" class="hero-video" muted loop playsinline preload="none" poster="assets/images/hero-combat-v2-20261117.webp" data-src="assets/videos/hero-combat-v2-20261117.mp4" aria-hidden="true" tabindex="-1"></video>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="accent-dot"></span> RULE-GOVERNED GENERATIVE WORLDS</p>
+        <h1 id="hero-title">World<span>Ruler</span><span class="title-dot">.</span></h1>
+        <p class="hero-subtitle">Interactive World Modeling under <em>Configurable Rules</em></p>
+        <div class="hero-actions">
+          <span class="button button-pending">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"/><path d="M14 3v5h5M9 12h6M9 16h4"/></svg>
+            <span class="button-copy"><span>Paper</span> <span class="coming-soon">Coming soon</span></span>
+          </span>
+          <a class="button button-resource" href="https://github.com/alaya-lab/WorldRuler" target="_blank" rel="noopener noreferrer">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg>
+            <span>Code</span><svg class="button-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg>
+          </a>
+          <a class="button button-resource" href="https://huggingface.co/datasets/AlayaLab/RuleVerse" target="_blank" rel="noopener noreferrer">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+            <span>Data</span><svg class="button-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg>
+          </a>
+          <a class="button button-resource" href="https://huggingface.co/AlayaLab/WorldRuler" target="_blank" rel="noopener noreferrer">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7Zm0 10v10M3 7l9 5 9-5M7.5 4.5l9 5v4"/></svg>
+            <span>Model</span><svg class="button-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>YOUR WORLD. YOUR RULES.</span><a href="#overview">Discover WorldRuler <span aria-hidden="true">↓</span></a><button id="hero-toggle" class="motion-toggle" aria-label="Play background video"><span aria-hidden="true">▷</span><span class="motion-label">Play motion</span></button></div>
+      <p class="hero-credit">Illustrative environment · H3 reference video</p>
+    </section>
+
+    <section class="authors container" aria-label="Authors and affiliations">
+      <p class="author-names"><a href="https://zmling22.github.io/">Mingliang Zhai<sup>1,2</sup></a><span>Chuanhao Li<sup>1</sup></span><span>Jiaming Tan<sup>1,2</sup></span><span>Zhen Li<sup>1,2</sup></span><span>Yuwei Wu<sup>2</sup></span><span>Yunde Jia<sup>2</sup></span><span>Zian Meng<sup>1,2</sup></span><span>Yuanyang Yin<sup>1,2</sup></span><span>Kaipeng Zhang<sup>1</sup></span></p>
+      <p class="affiliations"><span><sup>1</sup> ALAYA LAB</span><span><sup>2</sup> BEIJING INSTITUTE OF TECHNOLOGY</span></p>
+    </section>
+
+    <section class="section container overview" id="overview">
+      <div class="figure-section-layout">
+        <div class="section-copy">
+          <p class="eyebrow">01 / THE IDEA</p>
+          <h2>A world that follows <em>your rules.</em></h2>
+          <p class="lead">Change what an action means. Keep what the world remembers.</p>
+          <p>A switch can open a door before it comes into view. A defeated monster can leave a key that is still there after you return. Generative worlds need to preserve the logic behind these interactions—and make its consequences visible.</p>
+          <p>WorldRuler connects rule execution, video generation, and perceptual feedback through an executable 3D rule graph.</p>
+        </div>
+        <figure class="figure-block">
+          <div class="pdf-figure" data-pdf="assets/figures/teaser.pdf" style="--pdf-ratio:1456.0000/560.0000" role="img" aria-label="A schematic rule chain: defeat a monster, collect its key, and open a door, with the rules and world state saved together."></div>
+          <figcaption><span>RULE-STATE PERSISTENCE</span> Save the rules and the state behind the next action. Conceptual illustration.</figcaption>
+        </figure>
+      </div>
+      <div class="principles">
+        <article><span class="mini-label">01 / PERSIST</span><h3>Resume the world.</h3><p>Restore rule definitions, dependencies, and object states together—not just the last image.</p></article>
+        <article><span class="mini-label">02 / GROUND</span><h3>Find the right object.</h3><p>Bind rule entities to visual instances, including objects that appear only later.</p></article>
+        <article><span class="mini-label">03 / REALIZE</span><h3>Make the state visible.</h3><p>Guide designated attributes while preserving compatible appearance, motion, and unrelated content.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="method">
+      <div class="container">
+        <div class="section-heading heading-inline"><div><p class="eyebrow">02 / THE METHOD</p><h2>Execute the rule. <em>Realize the consequence.</em></h2></div><p class="section-summary">A persistent rule graph and a visual generation loop connect symbolic state to what you see.</p></div>
+        <figure class="figure-block method-figure">
+          <div class="pdf-figure" data-pdf="assets/figures/pipeline.pdf?v=532e5cec8cfd" style="--pdf-ratio:1373.874771/470.890600" role="img" aria-label="WorldRuler method: executable 3D rule graph, dynamic object binding, rule-guided generation, and perceptual feedback."></div>
+          <figcaption><span>ARCHITECTURE</span> Rule execution → object binding → video generation → perceptual feedback. Method schematic.</figcaption>
+        </figure>
+        <div class="principles method-steps">
+          <article><span class="mini-label">RULE GRAPH</span><h3>Persistent, executable state.</h3><p>Rules, dependencies, object identities, attributes, and spatial information live in a shared representation.</p></article>
+          <article><span class="mini-label">DYNAMIC BINDING</span><h3>State before first sight.</h3><p>Stored rule targets constrain newly visible objects from their first appearance, with feedback refining correspondences.</p></article>
+          <article><span class="mini-label">ATTRIBUTE REPLACEMENT</span><h3>Local, targeted control.</h3><p>A frozen reader estimates object attributes. A trained writer applies rule-directed corrections during generation.</p></article>
+        </div>
+        <details class="method-detail" open><summary><span>A closer look at attribute replacement & paired training</span><span class="detail-symbol" aria-hidden="true">＋</span></summary><div class="detail-content"><p>Counterfactual reconstruction and bidirectional attribute swapping train the replacement operator using paired videos. The video generator and attribute reader remain frozen.</p><div class="pdf-figure" data-pdf="assets/figures/replacement.pdf?v=c38c3fd2d900" style="--pdf-ratio:1337.000000/582.379390" role="img" aria-label="Diagram of local feature corrections, counterfactual reconstruction, and bidirectional attribute swapping."></div></div></details>
+      </div>
+    </section>
+
+    <section class="section container" id="showcase">
+      <div class="section-heading heading-inline"><div><p class="eyebrow">03 / IN THE WORLD</p><h2>See the rules <em>in action.</em></h2></div><p class="section-summary">Compare generated GTA V and Habitat continuations with rules disabled and enabled.</p></div>
+      <div class="showcase-explorer">
+        <div class="showcase-toolbar">
+          <div class="showcase-filters" role="group" aria-label="Choose the simulation environment">
+            <button class="filter-tag active" type="button" data-filter="gtav" aria-pressed="true">GTA V <span data-count="gtav"></span></button>
+            <button class="filter-tag" type="button" data-filter="habitat" aria-pressed="false">Habitat <span data-count="habitat"></span></button>
+          </div>
+          <span class="sample-count" id="sample-count" role="status"></span>
+        </div>
+        <div class="case-tabs" role="tablist" aria-label="Choose a rule demonstration" aria-orientation="horizontal">
+          <button class="case-tab active" id="tab-g-0084" role="tab" aria-selected="true" aria-controls="case-panel" tabindex="0" data-case="g-0084" aria-label="Example 01: Shoot the tank"><span class="case-number">01</span></button>
+        </div>
+        <div id="case-panel" role="tabpanel" aria-labelledby="tab-g-0084" tabindex="0">
+          <div class="case-panel-heading"><h3 id="case-title">Bullet impact → tank explosion</h3><div class="comparison-title"><span id="case-kind">RULE-CONDITIONED GENERATION</span><span id="case-position" aria-live="polite" aria-atomic="true"></span><span id="case-duration">19 seconds</span></div></div>
+          <div class="comparison-stage" tabindex="0" role="group" aria-label="Paired generated videos. Use left and right arrow keys to switch examples.">
+            <button id="case-prev" class="sample-arrow sample-prev" type="button" aria-label="Previous example"><span aria-hidden="true">‹</span></button>
+            <div class="comparison-videos">
+            <figure><div class="video-label"><span class="status-dot off"></span><span id="off-label">Rule disabled</span></div><video id="video-off" src="assets/videos/demo1114-g0084-off.mp4" poster="assets/images/demo1114-g0084-off.webp" preload="none" muted playsinline aria-label="Generated video with gas tank explosion disabled"></video></figure>
+            <figure><div class="video-label"><span class="status-dot"></span><span id="on-label">Rule enabled</span></div><video id="video-on" src="assets/videos/demo1114-g0084-on.mp4" poster="assets/images/demo1114-g0084-on.webp" preload="none" muted playsinline aria-label="Generated video with gas tank explosion enabled"></video></figure>
+            </div>
+            <button id="case-next" class="sample-arrow sample-next" type="button" aria-label="Next example"><span aria-hidden="true">›</span></button>
+          </div>
+          <div class="comparison-controls"><button id="pair-play" class="small-button"><span aria-hidden="true">▷</span> Play both</button><button id="pair-reset" class="icon-button" aria-label="Restart both comparison videos">↺</button><label class="sr-only" for="pair-seek">Comparison playback position</label><input id="pair-seek" type="range" min="0" max="19" value="0" step="0.05" aria-valuetext="0 seconds"><span class="time-display" id="pair-time">0:00 / 0:19</span></div>
+          <p class="player-message" id="pair-message" role="status"></p>
+          <noscript><p>Enable JavaScript to switch examples and play both videos together.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="walkthrough">
+      <div class="container">
+        <div class="section-heading heading-inline"><div><p class="eyebrow">04 / A RULE CHAIN, VISUALIZED</p><h2>From an action <em>to a world state.</em></h2></div><p class="section-summary">A temple walkthrough combines generated footage, reconstructed 3D geometry, and synchronized rule annotations.</p></div>
+        <div id="wr-walkthrough" aria-label="Temple video and interactive 3D rule graph" data-status="idle">
+          <div class="wr-scenes">
+            <div class="wr-pane">
+              <div class="wr-head"><span>GENERATED VIDEO</span><span class="wr-frame-id">FRAME 000</span></div>
+              <video id="walkthrough-video" class="wr-frame" data-src="assets/videos/hero-combat-v2-20261117.mp4" poster="assets/images/hero-combat-v2-20261117.webp" muted playsinline preload="none" aria-label="Approved temple demo, synchronized with the reconstructed world"></video>
+            </div>
+            <div class="wr-pane">
+              <div class="wr-head"><span>RECONSTRUCTED WORLD + RULES</span></div>
+              <div class="wr-cloud-wrap">
+                <canvas class="wr-gl" tabindex="0" role="group" aria-label="Interactive 3D point cloud and three rules" aria-describedby="wr-cloud-help"></canvas>
+                <canvas class="wr-overlay" aria-hidden="true"></canvas>
+                <div class="wr-rule-list">
+                  <div class="wr-rule-card" data-rule="0" style="--edge:#e29b82"><div class="wr-rule-id">01 · DEFEAT</div><p class="wr-rule-text">Defeat goblin → Key appears</p><div class="wr-rule-state">Key not visible</div></div>
+                  <div class="wr-rule-card" data-rule="1" style="--edge:#66bde8"><div class="wr-rule-id">02 · COLLECT</div><p class="wr-rule-text">Collect key → Carry key</p><div class="wr-rule-state">Unconfirmed</div></div>
+                  <div class="wr-rule-card" data-rule="2" style="--edge:#b6a2e0"><div class="wr-rule-id">03 · UNLOCK</div><p class="wr-rule-text">Use key → Open gate</p><div class="wr-rule-state">Unconfirmed</div></div>
+                </div>
+                <div class="wr-loading" role="status"><span>Loading 3D view…</span><button class="wr-retry" type="button" hidden>Retry</button></div>
+                <div class="wr-view-controls"><button class="wr-reset" type="button" disabled>Reset view</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="wr-hint" id="wr-cloud-help">Drag to orbit · Scroll to zoom · Shift / right-drag to pan · Touch: drag / pinch<span class="sr-only">. Keyboard: arrow keys orbit, Shift and arrows pan, plus and minus zoom, Home resets the view.</span></div>
+          <div class="wr-legend"><span><i style="--role:#66bde8"></i>Player</span><span><i style="--role:#e29b82"></i>Goblin</span><span><i style="--role:#e1cd76"></i>Key</span><span><i style="--role:#b6a2e0"></i>Gate</span></div>
+          <div class="wr-playback"><button class="small-button wr-play" type="button" disabled>▷ Play</button><button class="icon-button wr-replay" type="button" aria-label="Replay walkthrough" disabled>↺</button><span class="wr-caption" aria-live="polite">Approach</span><output aria-label="Playback time">0.00 / 19.50 s</output></div>
+          <p class="wr-message" role="status"></p>
+          <div class="wr-chapters" role="group" aria-label="Walkthrough chapters">
+            <button class="wr-chapter" type="button" data-step="0" aria-pressed="true" disabled><span>01</span>Approach</button>
+            <button class="wr-chapter" type="button" data-step="1" aria-pressed="false" disabled><span>02</span>Attack</button>
+            <button class="wr-chapter" type="button" data-step="2" aria-pressed="false" disabled><span>03</span>Collect the key</button>
+            <button class="wr-chapter" type="button" data-step="3" aria-pressed="false" disabled><span>04</span>Reach the gate</button>
+            <button class="wr-chapter" type="button" data-step="4" aria-pressed="false" disabled><span>05</span>Inspect the lock</button>
+          </div>
+          <noscript><p>Enable JavaScript to play the video and explore the reconstructed world.</p></noscript>
+        </div>
+        <div class="media-footnote"><p><strong>Illustrative visualization.</strong> The approved H3 demo is paired with offline 3D reconstruction and authored rule annotations. Unconfirmed events and unlocated objects remain labeled.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="ruleverse">
+      <div class="figure-section-layout">
+        <div class="section-copy"><p class="eyebrow">05 / THE DATASET</p><h2>RuleVerse<span class="title-dot">.</span></h2><p class="dataset-tagline">One world. <em>Two possible outcomes.</em></p><p class="lead">Paired rule-driven interactions. Collected in Habitat and GTA V.</p><p>Each pair shares the scene configuration and action intent, while a designated rule mechanism is enabled or disabled. The resulting videos capture different state evolutions, with annotations of states, events, and rule outcomes.</p><p>Scene-aware splits separate training and test groups. The collection pipeline covers object attributes, spatial relationships, and effects that begin outside the current view.</p></div>
+        <figure class="figure-block"><div class="pdf-figure" data-pdf="assets/figures/datacollect.pdf" style="--pdf-ratio:863.1381/412.9006" role="img" aria-label="RuleVerse collection pipeline across Habitat and GTA V, from scene grounding to annotated rule-enabled and rule-disabled video pairs."></div><figcaption><span>DATA COLLECTION</span> Shared scene and action intent. Controlled rule intervention. Paired observations.</figcaption></figure>
+      </div>
+      <dl class="stats"><div><dt>3,200</dt><dd>Paired interactions</dd></div><div><dt>6,400</dt><dd>Videos</dd></div><div><dt>2,900 <span>/ 300</span></dt><dd>Training / test pairs</dd></div><div><dt>2</dt><dd>Simulation environments</dd></div></dl>
+      <details class="method-detail dataset-statistics" id="dataset-statistics" open>
+        <summary><span>Dataset statistics</span><span class="detail-symbol" aria-hidden="true">＋</span></summary>
+        <div class="detail-content">
+          <section class="statistics-combinations" aria-labelledby="combinations-title">
+            <div class="statistics-section-heading"><h3 id="combinations-title">Rule combinations</h3><span>Pairs (%)</span></div>
+            <div class="statistics-matrices">
+              <div class="statistics-table-wrap" role="region" aria-label="Habitat rule combinations" tabindex="0"><table class="statistics-table combination-table"><caption>Habitat</caption><colgroup><col class="statistics-row-label"><col span="4"></colgroup><thead><tr><th scope="col">Trigger / effect</th>
+<th scope="col">Attribute</th>
+<th scope="col">Geometry</th>
+<th scope="col">Presence</th>
+<th scope="col">Topology</th>
+</tr></thead><tbody>
+<tr><th scope="row">Action</th>
+<td>7.3</td>
+<td>7.8</td>
+<td>4.9</td>
+<td>4.5</td>
+</tr>
+<tr><th scope="row">Spatial</th>
+<td>5.2</td>
+<td>5.6</td>
+<td>2.2</td>
+<td>3.7</td>
+</tr>
+<tr><th scope="row">Relation</th>
+<td>5.6</td>
+<td>5.4</td>
+<td>3.6</td>
+<td>2.6</td>
+</tr>
+<tr><th scope="row">State</th>
+<td>6.6</td>
+<td>7.1</td>
+<td>5.0</td>
+<td>3.4</td>
+</tr>
+<tr><th scope="row">Sequence</th>
+<td>5.9</td>
+<td>5.9</td>
+<td>3.7</td>
+<td>3.9</td>
+</tr>
+</tbody></table></div>
+              <div class="statistics-table-wrap" role="region" aria-label="GTA V rule combinations" tabindex="0"><table class="statistics-table combination-table"><caption>GTA V</caption><colgroup><col class="statistics-row-label"><col span="4"></colgroup><thead><tr><th scope="col">Trigger / effect</th>
+<th scope="col">Attribute</th>
+<th scope="col">Geometry</th>
+<th scope="col">Presence</th>
+<th scope="col">Behavior</th>
+</tr></thead><tbody>
+<tr><th scope="row">Action</th>
+<td>15.3</td>
+<td>10.9</td>
+<td>2.9</td>
+<td>12.7</td>
+</tr>
+<tr><th scope="row">Spatial</th>
+<td>5.6</td>
+<td>4.2</td>
+<td>1.5</td>
+<td>5.6</td>
+</tr>
+<tr><th scope="row">Relation</th>
+<td>2.7</td>
+<td>2.0</td>
+<td>0.7</td>
+<td>2.5</td>
+</tr>
+<tr><th scope="row">State</th>
+<td>5.9</td>
+<td>3.6</td>
+<td>1.4</td>
+<td>5.6</td>
+</tr>
+<tr><th scope="row">Sequence</th>
+<td>5.6</td>
+<td>4.3</td>
+<td>1.3</td>
+<td>5.7</td>
+</tr>
+</tbody></table></div>
+            </div>
+          </section>
+          <div class="statistics-secondary">
+            <div class="statistics-table-wrap" role="region" aria-label="Object binding statistics" tabindex="0"><table class="statistics-table binding-table"><caption><span>Object binding</span><small>Share (%)</small></caption><colgroup><col class="statistics-binding-label"><col span="2"></colgroup><thead><tr><th scope="col">Binding</th><th scope="col">Habitat</th><th scope="col">GTA V</th></tr></thead><tbody>
+<tr><th scope="row">Single-object</th><td>18.5</td><td>41.1</td></tr>
+<tr><th scope="row">Cross-object</th><td>60.2</td><td>40.2</td></tr>
+<tr><th scope="row">Environment</th><td>21.3</td><td>18.7</td></tr>
+</tbody></table></div>
+            <div class="statistics-table-wrap" role="region" aria-label="Median rule activation timing" tabindex="0"><table class="statistics-table timing-table"><caption><span>Rule activation timing</span><small>Median · video progress (%)</small></caption><thead><tr><th scope="col">Environment</th><th scope="col">Median activation</th></tr></thead><tbody>
+<tr><th scope="row">Habitat</th><td>65.5</td></tr>
+<tr><th scope="row">GTA V</th><td>55.5</td></tr>
+</tbody></table></div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+
+    <section class="section container" id="citation">
+      <div class="citation"><div class="citation-header"><span>CITE THIS PROJECT PAGE</span><button id="copy-citation" class="small-button">Copy BibTeX <span aria-hidden="true">⧉</span></button></div><pre><code id="bibtex">@misc{zhai2026worldruler,
+  title  = {WorldRuler: Interactive World Modeling
+            under Configurable Rules},
+  author = {Zhai, Mingliang and Li, Chuanhao and Tan, Jiaming
+            and Li, Zhen and Wu, Yuwei and Jia, Yunde
+            and Meng, Zian and Yin, Yuanyang and Zhang, Kaipeng},
+  year   = {2026},
+  url    = {https://alaya-lab.github.io/WorldRuler/},
+  note   = {Project page. Paper forthcoming.}
+}</code></pre><span id="copy-message" class="sr-only" role="status"></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><div class="footer-top"><div><a class="footer-brand" href="#top">WorldRuler<span class="brand-dot">.</span></a><p>Define the rules. Preserve the world.</p></div><div class="footer-contact"><span class="mini-label">CONTACT</span><a href="mailto:wuyuwei@bit.edu.cn">wuyuwei@bit.edu.cn ↗</a><a href="mailto:chuanhao.li@shanda.com">chuanhao.li@shanda.com ↗</a><a href="mailto:kaipeng.zhang@shanda.com">kaipeng.zhang@shanda.com ↗</a></div></div><div class="footer-bottom"><span>ALAYA LAB · 2026</span><span>Visual direction inspired by <a href="https://alaya-lab.github.io/AlayaVista/" target="_blank" rel="noopener">AlayaVista ↗</a></span><a href="https://github.com/alaya-lab/WorldRuler/tree/main/docs" target="_blank" rel="noopener">Website source ↗</a><a href="#top">Back to top ↑</a></div></footer>
+
+</body>
+</html>
