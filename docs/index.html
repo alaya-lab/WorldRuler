@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="styles.css?v=text-flow-20261118">
   <link rel="stylesheet" href="walkthrough.css?v=retake34-accumulated-2">
   <script src="showcase-data.js?v=dataset-20261118" defer></script>
-  <script src="script.js?v=dataset-20261118" defer></script>
+  <script src="script.js?v=copy-cleanup-20261118" defer></script>
   <script src="walkthrough.js?v=combat-v2-20261117" defer></script>
   <title>WorldRuler — Interactive World Modeling under Configurable Rules</title>
 </head>
@@ -58,8 +58,7 @@
           </a>
         </div>
       </div>
-      <div class="hero-bottom"><span>YOUR WORLD. YOUR RULES.</span><a href="#overview">Discover WorldRuler <span aria-hidden="true">↓</span></a><button id="hero-toggle" class="motion-toggle" aria-label="Play background video"><span aria-hidden="true">▷</span><span class="motion-label">Play motion</span></button></div>
-      <p class="hero-credit">Illustrative environment · H3 reference video</p>
+      <div class="hero-bottom"><span>YOUR WORLD. YOUR RULES.</span><a href="#overview">Discover WorldRuler <span aria-hidden="true">↓</span></a><button id="hero-toggle" class="motion-toggle" aria-label="Play background video"><span aria-hidden="true">▷</span><span class="motion-label">Play</span></button></div>
     </section>
 
     <section class="authors container" aria-label="Authors and affiliations">
@@ -79,12 +78,12 @@
         </div>
         <figure class="figure-block">
           <img class="paper-figure" src="assets/figures/teaser.png?v=822d989625ad" srcset="assets/figures/teaser-960.png?v=bb1f34023e8e 960w, assets/figures/teaser.png?v=822d989625ad 2560w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 72px), min(1280px, calc(100vw - 112px))" width="2560" height="985" loading="eager" decoding="async" fetchpriority="high" alt="A schematic rule chain: defeat a monster, collect its key, and open a door, with the rules and world state saved together.">
-          <figcaption><span>RULE-STATE PERSISTENCE</span> Save the rules and the state behind the next action. Conceptual illustration.</figcaption>
+          <figcaption><span>RULE-STATE PERSISTENCE</span> Save the rules and the state behind the next action.</figcaption>
         </figure>
       </div>
       <div class="principles">
         <article><span class="mini-label">01 / PERSIST</span><h3>Resume the world.</h3><p>Restore rule definitions, dependencies, and object states together—not just the last image.</p></article>
-        <article><span class="mini-label">02 / GROUND</span><h3>Find the right object.</h3><p>Bind rule entities to visual instances, including objects that appear only later.</p></article>
+        <article><span class="mini-label">02 / GROUND</span><h3>Find the object.</h3><p>Bind rule entities to visual instances, including objects that appear only later.</p></article>
         <article><span class="mini-label">03 / REALIZE</span><h3>Make the state visible.</h3><p>Guide designated attributes while preserving compatible appearance, motion, and unrelated content.</p></article>
       </div>
     </section>
@@ -94,7 +93,7 @@
         <div class="section-heading heading-inline"><div><p class="eyebrow">02 / THE METHOD</p><h2>Execute the rule. <em>Realize the consequence.</em></h2></div><p class="section-summary">A persistent rule graph and a visual generation loop connect symbolic state to what you see.</p></div>
         <figure class="figure-block method-figure">
           <img class="paper-figure" src="assets/figures/pipeline.png?v=dea9d03a5ef1" srcset="assets/figures/pipeline-960.png?v=065e3c861890 960w, assets/figures/pipeline.png?v=dea9d03a5ef1 2560w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 72px), min(1280px, calc(100vw - 112px))" width="2560" height="881" loading="eager" decoding="async" alt="WorldRuler method: executable 3D rule graph, dynamic object binding, rule-guided generation, and perceptual feedback.">
-          <figcaption><span>ARCHITECTURE</span> Rule execution → object binding → video generation → perceptual feedback. Method schematic.</figcaption>
+          <figcaption><span>ARCHITECTURE</span> Rule execution → object binding → video generation → perceptual feedback. </figcaption>
         </figure>
         <div class="principles method-steps">
           <article><span class="mini-label">RULE GRAPH</span><h3>Persistent, executable state.</h3><p>Rules, dependencies, object identities, attributes, and spatial information live in a shared representation.</p></article>

@@ -10,7 +10,7 @@
 
   function loadHero() { if (!hero.getAttribute('src')) hero.src = hero.dataset.src; }
   function updateHeroButton() {
-    heroToggle.innerHTML = hero.paused ? '<span aria-hidden="true">▷</span><span class="motion-label">Play motion</span>' : '<span aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span>';
+    heroToggle.innerHTML = hero.paused ? '<span aria-hidden="true">▷</span><span class="motion-label">Play</span>' : '<span aria-hidden="true">Ⅱ</span><span class="motion-label">Pause</span>';
     heroToggle.setAttribute('aria-label', hero.paused ? 'Play background video' : 'Pause background video');
   }
   function manageHero() {
