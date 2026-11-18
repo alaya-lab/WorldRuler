@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "sourceDataset": "RuleVerse",
   "sourceURL": "https://huggingface.co/datasets/AlayaLab/RuleVerse",
-  "selectionPolicy": "Retain ten author-approved generated pairs; add four GTA V and six Habitat original dataset pairs, giving ten per environment. Concrete effect/operator subtypes are unique within each environment; these are not ten distinct broad taxonomy families.",
+  "selectionPolicy": "Retain ten author-approved generated pairs; add four GTA-V and six Habitat original dataset pairs, giving ten per environment. Concrete effect/operator subtypes are unique within each environment; these are not ten distinct broad taxonomy families.",
   "sourceAuthorization": "User explicitly selected original dataset videos for the additions.",
   "preparation": "Web compression only. Complete source frame count, frame order and frame rate retained. No generated replacement, compositing, retouching or temporal cuts. Audio omitted for muted web playback.",
   "verification": "Source hashes and explicit rule-enabled flags verified; every encoded video fully decoded; output frame count and FPS checked against source manifests. Contact sheets visually reviewed for the displayed effect. Source code/state quality checks do not imply completed human dataset acceptance.",

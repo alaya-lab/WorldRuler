@@ -46,7 +46,7 @@
     tab.classList.toggle('active', index === 0);
     const number = document.createElement('span'); number.className = 'case-number';
     number.textContent = String(example.number ?? examples.slice(0, index + 1).filter((item) => item.category === example.category).length).padStart(2, '0'); number.setAttribute('aria-hidden', 'true');
-    tab.setAttribute('aria-label', `${example.category === 'gtav' ? 'GTA V' : 'Habitat'} example ${number.textContent}: ${example.title}`);
+    tab.setAttribute('aria-label', `${example.category === 'gtav' ? 'GTA-V' : 'Habitat'} example ${number.textContent}: ${example.title}`);
     tab.title = example.title;
     tab.append(number);
     return tab;
@@ -57,7 +57,7 @@
     label.closest('button').disabled = count === 0;
   });
   const initialCount = examples.filter((example) => example.category === initialCategory).length;
-  $('#sample-count').textContent = `${initialCount} GTA V example${initialCount === 1 ? '' : 's'}`;
+  $('#sample-count').textContent = `${initialCount} GTA-V example${initialCount === 1 ? '' : 's'}`;
   const off = $('#video-off');
   const on = $('#video-on');
   const playButton = $('#pair-play');
@@ -169,7 +169,7 @@
     tabs.forEach((tab) => { tab.hidden = tab.dataset.category !== filter.dataset.filter; });
     const visible = tabs.filter((tab) => !tab.hidden);
     if (visible.length && !visible.some((tab) => tab.dataset.case === activeCase.id)) selectCase(visible[0]);
-    $('#sample-count').textContent = `${visible.length} ${filter.dataset.filter === 'gtav' ? 'GTA V' : 'Habitat'} example${visible.length === 1 ? '' : 's'}`;
+    $('#sample-count').textContent = `${visible.length} ${filter.dataset.filter === 'gtav' ? 'GTA-V' : 'Habitat'} example${visible.length === 1 ? '' : 's'}`;
   }));
   updateCaseNavigation();
 

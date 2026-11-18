@@ -13,10 +13,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://alaya-lab.github.io/WorldRuler/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=text-flow-20261118">
+  <link rel="stylesheet" href="styles.css?v=environments-20261118">
   <link rel="stylesheet" href="walkthrough.css?v=retake34-accumulated-2">
   <script src="showcase-data.js?v=dataset-20261118" defer></script>
-  <script src="script.js?v=copy-cleanup-20261118" defer></script>
+  <script src="script.js?v=environments-20261118" defer></script>
   <script src="walkthrough.js?v=combat-v2-20261117" defer></script>
   <title>WorldRuler — Interactive World Modeling under Configurable Rules</title>
 </head>
@@ -105,11 +105,11 @@
     </section>
 
     <section class="section container" id="showcase">
-      <div class="section-heading heading-inline"><div><p class="eyebrow">03 / IN THE WORLD</p><h2>See the rules <em>in action.</em></h2></div><p class="section-summary">Compare GTA V and Habitat videos with rules disabled and enabled.</p></div>
+      <div class="section-heading heading-inline"><div><p class="eyebrow">03 / IN THE WORLD</p><h2>See the rules <em>in action.</em></h2></div><p class="section-summary">Compare GTA-V and Habitat videos with rules disabled and enabled.</p></div>
       <div class="showcase-explorer">
         <div class="showcase-toolbar">
           <div class="showcase-filters" role="group" aria-label="Choose the simulation environment">
-            <button class="filter-tag active" type="button" data-filter="gtav" aria-pressed="true">GTA V <span data-count="gtav"></span></button>
+            <button class="filter-tag active" type="button" data-filter="gtav" aria-pressed="true">GTA-V <span data-count="gtav"></span></button>
             <button class="filter-tag" type="button" data-filter="habitat" aria-pressed="false">Habitat <span data-count="habitat"></span></button>
           </div>
           <span class="sample-count" id="sample-count" role="status"></span>
@@ -176,10 +176,10 @@
 
     <section class="section container" id="ruleverse">
       <div class="figure-section-layout">
-        <div class="section-copy"><p class="eyebrow">05 / THE DATASET</p><h2>RuleVerse<span class="title-dot">.</span></h2><p class="dataset-tagline">One world. <em>Two possible outcomes.</em></p><p class="lead">Paired rule-driven interactions. Collected in Habitat and GTA V.</p><p>Each pair shares the scene configuration and action intent, while a designated rule mechanism is enabled or disabled. The resulting videos capture different state evolutions, with annotations of states, events, and rule outcomes.</p><p>Scene-aware splits separate training and test groups. The collection pipeline covers object attributes, spatial relationships, and effects that begin outside the current view.</p></div>
-        <figure class="figure-block"><img class="paper-figure" src="assets/figures/datacollect.png?v=ab4558e43faa" srcset="assets/figures/datacollect-960.png?v=6fafc6f61260 960w, assets/figures/datacollect.png?v=ab4558e43faa 2560w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 72px), min(1280px, calc(100vw - 112px))" width="2560" height="1225" loading="eager" decoding="async" alt="RuleVerse collection pipeline across Habitat and GTA V, from scene grounding to annotated rule-enabled and rule-disabled video pairs."><figcaption><span>DATA COLLECTION</span> Shared scene and action intent. Controlled rule intervention. Paired observations.</figcaption></figure>
+        <div class="section-copy"><p class="eyebrow">05 / THE DATASET</p><h2>RuleVerse<span class="title-dot">.</span></h2><p class="dataset-tagline">One world. <em>Two possible outcomes.</em></p><p class="lead">Paired rule-driven interactions. Collected in Habitat and GTA-V.</p><p>Each pair shares the scene configuration and action intent, while a designated rule mechanism is enabled or disabled. The resulting videos capture different state evolutions, with annotations of states, events, and rule outcomes.</p><p>Scene-aware splits separate training and test groups. The collection pipeline covers object attributes, spatial relationships, and effects that begin outside the current view.</p></div>
+        <figure class="figure-block"><img class="paper-figure" src="assets/figures/datacollect.png?v=ab4558e43faa" srcset="assets/figures/datacollect-960.png?v=6fafc6f61260 960w, assets/figures/datacollect.png?v=ab4558e43faa 2560w" sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 72px), min(1280px, calc(100vw - 112px))" width="2560" height="1225" loading="eager" decoding="async" alt="RuleVerse collection pipeline across Habitat and GTA-V, from scene grounding to annotated rule-enabled and rule-disabled video pairs."><figcaption><span>DATA COLLECTION</span> Shared scene and action intent. Controlled rule intervention. Paired observations.</figcaption></figure>
       </div>
-      <dl class="stats"><div><dt>3,200</dt><dd>Paired interactions</dd></div><div><dt>6,400</dt><dd>Videos</dd></div><div><dt>2,900 <span>/ 300</span></dt><dd>Training / test pairs</dd></div><div><dt>2</dt><dd>Simulation environments</dd></div></dl>
+      <dl class="stats"><div><dt>3,200</dt><dd>Paired interactions</dd></div><div><dt>6,400</dt><dd>Videos</dd></div><div><dt>2,900 <span>/ 300</span></dt><dd>Training / test pairs</dd></div><div><dt class="environment-names">Habitat/GTA-V</dt><dd>Simulation environments</dd></div></dl>
       <details class="method-detail dataset-statistics" id="dataset-statistics" open>
         <summary><span>Dataset statistics</span><span class="detail-symbol" aria-hidden="true">＋</span></summary>
         <div class="detail-content">
@@ -223,7 +223,7 @@
 <td>3.9</td>
 </tr>
 </tbody></table></div>
-              <div class="statistics-table-wrap" role="region" aria-label="GTA V rule combinations" tabindex="0"><table class="statistics-table combination-table"><caption>GTA V</caption><colgroup><col class="statistics-row-label"><col span="4"></colgroup><thead><tr><th scope="col">Trigger / effect</th>
+              <div class="statistics-table-wrap" role="region" aria-label="GTA-V rule combinations" tabindex="0"><table class="statistics-table combination-table"><caption>GTA-V</caption><colgroup><col class="statistics-row-label"><col span="4"></colgroup><thead><tr><th scope="col">Trigger / effect</th>
 <th scope="col">Attribute</th>
 <th scope="col">Geometry</th>
 <th scope="col">Presence</th>
@@ -263,14 +263,14 @@
             </div>
           </section>
           <div class="statistics-secondary">
-            <div class="statistics-table-wrap" role="region" aria-label="Object binding statistics" tabindex="0"><table class="statistics-table binding-table"><caption><span>Object binding</span><small>Share (%)</small></caption><colgroup><col class="statistics-binding-label"><col span="2"></colgroup><thead><tr><th scope="col">Binding</th><th scope="col">Habitat</th><th scope="col">GTA V</th></tr></thead><tbody>
+            <div class="statistics-table-wrap" role="region" aria-label="Object binding statistics" tabindex="0"><table class="statistics-table binding-table"><caption><span>Object binding</span><small>Share (%)</small></caption><colgroup><col class="statistics-binding-label"><col span="2"></colgroup><thead><tr><th scope="col">Binding</th><th scope="col">Habitat</th><th scope="col">GTA-V</th></tr></thead><tbody>
 <tr><th scope="row">Single-object</th><td>18.5</td><td>41.1</td></tr>
 <tr><th scope="row">Cross-object</th><td>60.2</td><td>40.2</td></tr>
 <tr><th scope="row">Environment</th><td>21.3</td><td>18.7</td></tr>
 </tbody></table></div>
             <div class="statistics-table-wrap" role="region" aria-label="Median rule activation timing" tabindex="0"><table class="statistics-table timing-table"><caption><span>Rule activation timing</span><small>Median · video progress (%)</small></caption><thead><tr><th scope="col">Environment</th><th scope="col">Median activation</th></tr></thead><tbody>
 <tr><th scope="row">Habitat</th><td>65.5</td></tr>
-<tr><th scope="row">GTA V</th><td>55.5</td></tr>
+<tr><th scope="row">GTA-V</th><td>55.5</td></tr>
 </tbody></table></div>
           </div>
         </div>
