@@ -4,7 +4,7 @@ Website: https://alaya-lab.github.io/WorldRuler/
 
 This directory contains the static project homepage, published by GitHub Pages from `main:/docs`. It needs no build step. Keep `.nojekyll` so assets are served directly.
 
-The site includes the selected hero video, ten paired GTA V / Habitat demonstrations, four paper figures rendered from PDF, dataset tables, and a synchronized interactive point cloud in section 04. The video and geometry use relative URLs and work under `/WorldRuler/`.
+The site includes the selected hero video, ten paired GTA V / Habitat demonstrations, four paper figures displayed as native PNG images, dataset tables, and a synchronized interactive point cloud in section 04. The video and geometry use relative URLs and work under `/WorldRuler/`.
 
 ## Media
 
@@ -14,7 +14,7 @@ The published video is a web-compressed H.264 derivative, 6,743,323 bytes, SHA-2
 
 The browser geometry manifest records the original source, displayed video and geometry hashes. Background points accumulate up to the current frame, with five chapters and orbit/pan/zoom controls. The paired showcase contains six GTA V and four Habitat examples selected by the authors.
 
-PDF.js and its font/WASM dependencies retain their bundled license notices under `assets/vendor/pdfjs/`.
+Paper figures load directly as responsive PNG images, with 960-pixel and high-resolution variants. They are rendered offline from the first page of each author-provided PDF using its CropBox, then compressed losslessly. Source PDFs are retained unchanged; source and image hashes are recorded in `assets/figures/png-manifest.json`. No PDF parser, worker, fonts or WASM decoder is loaded to display figures. The unused historical PDF.js bundle retains its license notices under `assets/vendor/pdfjs/`.
 
 ## Local preview
 

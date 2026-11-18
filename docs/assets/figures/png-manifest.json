@@ -1,0 +1,95 @@
+{
+  "format": "PNG",
+  "renderer": "Poppler pdftoppm, first page, PDF CropBox",
+  "compression": "Lossless PNG, Pillow optimize=True, compress_level=9",
+  "figures": [
+    {
+      "name": "teaser",
+      "source": "teaser.pdf",
+      "sourceSha256": "140a2d11cc23df3b463f36caeffc00f773a3269e0e57c8ba62c566f8d1bc3982",
+      "cropBoxApplied": true,
+      "outputs": [
+        {
+          "file": "teaser-960.png",
+          "width": 960,
+          "height": 370,
+          "bytes": 473730,
+          "sha256": "bb1f34023e8e8a8dd2faa8ca90cf7bf6f9cee472ba042ee061bf5dd185c6a2aa"
+        },
+        {
+          "file": "teaser.png",
+          "width": 2560,
+          "height": 985,
+          "bytes": 2446436,
+          "sha256": "822d989625adca5e95cf35fb93df2282701cf5893e959e150642cb449385f7a0"
+        }
+      ]
+    },
+    {
+      "name": "pipeline",
+      "source": "pipeline.pdf",
+      "sourceSha256": "616c1135ccd2116c2f7f182f2beed24becb67f68043fae56720e536bd09dc65c",
+      "cropBoxApplied": true,
+      "outputs": [
+        {
+          "file": "pipeline-960.png",
+          "width": 960,
+          "height": 331,
+          "bytes": 255717,
+          "sha256": "065e3c861890bbf130f9a9e43d071507a69cf4a1a365f7714f17335d4262dcf7"
+        },
+        {
+          "file": "pipeline.png",
+          "width": 2560,
+          "height": 881,
+          "bytes": 1164156,
+          "sha256": "dea9d03a5ef104def4463250810a1d8e3fd45e9db5721bbfe6dadc5cfa0df6a6"
+        }
+      ]
+    },
+    {
+      "name": "replacement",
+      "source": "replacement.pdf",
+      "sourceSha256": "c38c3fd2d90022e83d8555b1938fbc5b9166422f6ac62c805460007b09715660",
+      "cropBoxApplied": true,
+      "outputs": [
+        {
+          "file": "replacement-960.png",
+          "width": 960,
+          "height": 419,
+          "bytes": 84138,
+          "sha256": "f7ed0f75dd8b742701629683e6ddf0e72457ba61a37d05192879e6fab20fbea8"
+        },
+        {
+          "file": "replacement.png",
+          "width": 2000,
+          "height": 872,
+          "bytes": 188201,
+          "sha256": "96f374aef3f3aa6d58d6ef4b0fac50f5559a5ccc98152c67bc904d2523d3f67d"
+        }
+      ]
+    },
+    {
+      "name": "datacollect",
+      "source": "datacollect.pdf",
+      "sourceSha256": "3342a791a614591e3ede684d122e78d8ca5e3efb81a2e2e0db060ee50b72a6e3",
+      "cropBoxApplied": true,
+      "outputs": [
+        {
+          "file": "datacollect-960.png",
+          "width": 960,
+          "height": 460,
+          "bytes": 293426,
+          "sha256": "6fafc6f61260dec03e5f9bc417c702b8e9200b6e69b8e0aebba9275979609ae8"
+        },
+        {
+          "file": "datacollect.png",
+          "width": 2560,
+          "height": 1225,
+          "bytes": 1136278,
+          "sha256": "ab4558e43faae3688b4e7975f8d90469b95810a2084300bf2f8b487d85ce38f4"
+        }
+      ]
+    }
+  ]
+}
