@@ -117,7 +117,8 @@
       const src = `assets/videos/${activeCase.prefix}-${state}.mp4`;
       video.poster = `assets/images/${activeCase.prefix}-${state}.webp`;
       video.src = src;
-      video.setAttribute('aria-label', `Generated video with ${activeCase.accessible} ${word}`);
+      const source = activeCase.sourceType === 'dataset' ? 'Dataset recording' : 'Generated video';
+      video.setAttribute('aria-label', `${source} with ${activeCase.accessible} ${word}`);
       video.load();
       $(`#${state}-label`).textContent = `${activeCase.label} ${word}`;
     });

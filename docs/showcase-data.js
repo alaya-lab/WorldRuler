@@ -12,7 +12,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0084",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 1
+    "number": 1,
+    "sourceType": "generated",
+    "ruleCategory": "explosion"
   },
   {
     "id": "g-0055",
@@ -27,7 +29,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0055",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 2
+    "number": 2,
+    "sourceType": "generated",
+    "ruleCategory": "weapon_response"
   },
   {
     "id": "g-0926",
@@ -42,7 +46,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0926",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 3
+    "number": 3,
+    "sourceType": "generated",
+    "ruleCategory": "weather"
   },
   {
     "id": "g-0080",
@@ -57,7 +63,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0080",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 4
+    "number": 4,
+    "sourceType": "generated",
+    "ruleCategory": "prop_toppling"
   },
   {
     "id": "g-0936-s314",
@@ -72,7 +80,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0936-s314",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 5
+    "number": 5,
+    "sourceType": "generated",
+    "ruleCategory": "vehicle_color"
   },
   {
     "id": "g-0153-s314",
@@ -87,7 +97,77 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "g-0153-s314",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 6
+    "number": 6,
+    "sourceType": "generated",
+    "ruleCategory": "vehicle_motion"
+  },
+  {
+    "id": "dataset-g-0088",
+    "prefix": "dataset1118-g0088",
+    "category": "gtav",
+    "title": "Threaten the store clerk",
+    "heading": "Aim at the store clerk → cash handover",
+    "duration": 27.533333333333335,
+    "kind": "RULEVERSE DATASET",
+    "label": "Effect",
+    "accessible": "store robbery response",
+    "sourcePair": "pair_0088",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "store_robbery",
+    "mode": "paired",
+    "number": 7
+  },
+  {
+    "id": "dataset-g-0189",
+    "prefix": "dataset1118-g0189",
+    "category": "gtav",
+    "title": "Approach the car",
+    "heading": "Approach the car → driver door opens",
+    "duration": 20.083333333333332,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "automatic driver-door opening",
+    "sourcePair": "pair_0189",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "vehicle_door",
+    "mode": "paired",
+    "number": 8
+  },
+  {
+    "id": "dataset-g-0260",
+    "prefix": "dataset1118-g0260",
+    "category": "gtav",
+    "title": "Approach the character",
+    "heading": "Come within 3 metres → character disappears",
+    "duration": 21.633333333333333,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "character disappearance",
+    "sourcePair": "pair_0260",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "disappearance",
+    "mode": "paired",
+    "number": 9
+  },
+  {
+    "id": "dataset-g-0763",
+    "prefix": "dataset1118-g0763",
+    "category": "gtav",
+    "title": "Aim twice at the character",
+    "heading": "Aim twice → time changes to 18:00",
+    "duration": 29.716666666666665,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "time-of-day change",
+    "sourcePair": "pair_0763",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "time_of_day",
+    "mode": "paired",
+    "number": 10
   },
   {
     "id": "h-02828",
@@ -102,7 +182,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "h-02828",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 1
+    "number": 1,
+    "sourceType": "generated",
+    "ruleCategory": "illumination"
   },
   {
     "id": "h-01637",
@@ -117,7 +199,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "h-01637",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 2
+    "number": 2,
+    "sourceType": "generated",
+    "ruleCategory": "material"
   },
   {
     "id": "h-02830",
@@ -132,7 +216,9 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "h-02830",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 3
+    "number": 3,
+    "sourceType": "generated",
+    "ruleCategory": "disappearance"
   },
   {
     "id": "h-02831",
@@ -147,6 +233,110 @@ window.WORLD_RULER_SHOWCASE = [
     "sourcePair": "h-02831",
     "implementation": "reference-guided-demo-turbo4-retake34",
     "mode": "paired",
-    "number": 4
+    "number": 4,
+    "sourceType": "generated",
+    "ruleCategory": "scale"
+  },
+  {
+    "id": "dataset-h-01429",
+    "prefix": "dataset1118-h01429",
+    "category": "habitat",
+    "title": "Unlock the hallway passage",
+    "heading": "Open then close the drawer → passage unlocks",
+    "duration": 21.766666666666666,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "hallway passage unlocking",
+    "sourcePair": "pair_01429",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "route_state",
+    "mode": "paired",
+    "number": 5
+  },
+  {
+    "id": "dataset-h-00525",
+    "prefix": "dataset1118-h00525",
+    "category": "habitat",
+    "title": "Open the oven remotely",
+    "heading": "Open the drawer → oven door opens",
+    "duration": 20.8,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "linked oven-door opening",
+    "sourcePair": "pair_00525",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "joint",
+    "mode": "paired",
+    "number": 6
+  },
+  {
+    "id": "dataset-h-00156",
+    "prefix": "dataset1118-h00156",
+    "category": "habitat",
+    "title": "Rotate the hall stand",
+    "heading": "Leave the laundry room → hall stand rotates 90°",
+    "duration": 16.066666666666666,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "hall-stand rotation",
+    "sourcePair": "pair_00156",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "rotate",
+    "mode": "paired",
+    "number": 7
+  },
+  {
+    "id": "dataset-h-00971",
+    "prefix": "dataset1118-h00971",
+    "category": "habitat",
+    "title": "Reshape the laundry rack",
+    "heading": "Enter the laundry room → laundry rack tapers",
+    "duration": 14.1,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "laundry-rack deformation",
+    "sourcePair": "pair_00971",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "deform",
+    "mode": "paired",
+    "number": 8
+  },
+  {
+    "id": "dataset-h-00688",
+    "prefix": "dataset1118-h00688",
+    "category": "habitat",
+    "title": "Make the TV transparent",
+    "heading": "Hold the phone → TV becomes transparent",
+    "duration": 34.93333333333333,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "TV transparency",
+    "sourcePair": "pair_00688",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "opacity",
+    "mode": "paired",
+    "number": 9
+  },
+  {
+    "id": "dataset-h-02305",
+    "prefix": "dataset1118-h02305",
+    "category": "habitat",
+    "title": "Move the coffee maker",
+    "heading": "Open then close the cabinet → coffee maker moves",
+    "duration": 24.8,
+    "kind": "RULEVERSE DATASET",
+    "label": "Rule",
+    "accessible": "coffee-maker displacement",
+    "sourcePair": "pair_02305",
+    "implementation": "ruleverse-original-recording",
+    "sourceType": "dataset",
+    "ruleCategory": "translate",
+    "mode": "paired",
+    "number": 10
   }
 ];

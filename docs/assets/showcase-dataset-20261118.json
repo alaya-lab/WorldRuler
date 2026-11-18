@@ -1,0 +1,1311 @@
+{
+  "version": 1,
+  "date": "2026-11-18",
+  "sourceDataset": "RuleVerse",
+  "sourceURL": "https://huggingface.co/datasets/AlayaLab/RuleVerse",
+  "selectionPolicy": "Retain ten author-approved generated pairs; add four GTA V and six Habitat original dataset pairs, giving ten per environment. Concrete effect/operator subtypes are unique within each environment; these are not ten distinct broad taxonomy families.",
+  "sourceAuthorization": "User explicitly selected original dataset videos for the additions.",
+  "preparation": "Web compression only. Complete source frame count, frame order and frame rate retained. No generated replacement, compositing, retouching or temporal cuts. Audio omitted for muted web playback.",
+  "verification": "Source hashes and explicit rule-enabled flags verified; every encoded video fully decoded; output frame count and FPS checked against source manifests. Contact sheets visually reviewed for the displayed effect. Source code/state quality checks do not imply completed human dataset acceptance.",
+  "counts": {
+    "gtav": 10,
+    "habitat": 10,
+    "retainedGeneratedPairs": 10,
+    "addedDatasetPairs": 10
+  },
+  "categories": [
+    {
+      "id": "g-0084",
+      "category": "gtav",
+      "number": 1,
+      "ruleCategory": "explosion",
+      "sourceType": "generated"
+    },
+    {
+      "id": "g-0055",
+      "category": "gtav",
+      "number": 2,
+      "ruleCategory": "weapon_response",
+      "sourceType": "generated"
+    },
+    {
+      "id": "g-0926",
+      "category": "gtav",
+      "number": 3,
+      "ruleCategory": "weather",
+      "sourceType": "generated"
+    },
+    {
+      "id": "g-0080",
+      "category": "gtav",
+      "number": 4,
+      "ruleCategory": "prop_toppling",
+      "sourceType": "generated"
+    },
+    {
+      "id": "g-0936-s314",
+      "category": "gtav",
+      "number": 5,
+      "ruleCategory": "vehicle_color",
+      "sourceType": "generated"
+    },
+    {
+      "id": "g-0153-s314",
+      "category": "gtav",
+      "number": 6,
+      "ruleCategory": "vehicle_motion",
+      "sourceType": "generated"
+    },
+    {
+      "id": "dataset-g-0088",
+      "category": "gtav",
+      "number": 7,
+      "ruleCategory": "store_robbery",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-g-0189",
+      "category": "gtav",
+      "number": 8,
+      "ruleCategory": "vehicle_door",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-g-0260",
+      "category": "gtav",
+      "number": 9,
+      "ruleCategory": "disappearance",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-g-0763",
+      "category": "gtav",
+      "number": 10,
+      "ruleCategory": "time_of_day",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "h-02828",
+      "category": "habitat",
+      "number": 1,
+      "ruleCategory": "illumination",
+      "sourceType": "generated"
+    },
+    {
+      "id": "h-01637",
+      "category": "habitat",
+      "number": 2,
+      "ruleCategory": "material",
+      "sourceType": "generated"
+    },
+    {
+      "id": "h-02830",
+      "category": "habitat",
+      "number": 3,
+      "ruleCategory": "disappearance",
+      "sourceType": "generated"
+    },
+    {
+      "id": "h-02831",
+      "category": "habitat",
+      "number": 4,
+      "ruleCategory": "scale",
+      "sourceType": "generated"
+    },
+    {
+      "id": "dataset-h-01429",
+      "category": "habitat",
+      "number": 5,
+      "ruleCategory": "route_state",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-h-00525",
+      "category": "habitat",
+      "number": 6,
+      "ruleCategory": "joint",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-h-00156",
+      "category": "habitat",
+      "number": 7,
+      "ruleCategory": "rotate",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-h-00971",
+      "category": "habitat",
+      "number": 8,
+      "ruleCategory": "deform",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-h-00688",
+      "category": "habitat",
+      "number": 9,
+      "ruleCategory": "opacity",
+      "sourceType": "dataset"
+    },
+    {
+      "id": "dataset-h-02305",
+      "category": "habitat",
+      "number": 10,
+      "ruleCategory": "translate",
+      "sourceType": "dataset"
+    }
+  ],
+  "addedPairs": [
+    {
+      "display": {
+        "id": "dataset-g-0088",
+        "prefix": "dataset1118-g0088",
+        "category": "gtav",
+        "title": "Threaten the store clerk",
+        "heading": "Aim at the store clerk → cash handover",
+        "duration": 27.533333333333335,
+        "kind": "RULEVERSE DATASET",
+        "label": "Effect",
+        "accessible": "store robbery response",
+        "sourcePair": "pair_0088",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "store_robbery",
+        "mode": "paired",
+        "number": 7
+      },
+      "split": "test",
+      "pair": "pair_0088",
+      "dataClass": "native_intervention",
+      "ruleText": "举枪威胁实际商店店员，观察原版抢劫脚本的取钱、交钱过程。",
+      "rules": null,
+      "nativeRule": {
+        "label": "店员交钱",
+        "rule": "举枪威胁实际商店店员，观察原版抢劫脚本的取钱、交钱过程。",
+        "off_scope": "OFF 不建立玩家模拟瞄准检测状态；保留同一举枪任务。不是店员专用开关，是否有效待实测。",
+        "visual_checks": [
+          "实际店员与营业商店",
+          "同样的瞄准画面",
+          "ON 取钱交钱，OFF 不交钱；举手不算交钱"
+        ],
+        "status": "implemented_unverified",
+        "effect_readback": "Telemetry is necessary, never sufficient."
+      },
+      "media": [
+        {
+          "id": "g-0088",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0088",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "gtav/test/pairs/pair_0088/negative/episode/video.mp4",
+          "source_sha256": "d19f5f3388d4849b9fd8755b0eae3746dc3969c18ee687d3b9e0edd949711711",
+          "source_bytes": 8634741,
+          "file": "assets/videos/dataset1118-g0088-off.mp4",
+          "bytes": 1803959,
+          "sha256": "ac0e00a539bfef087006185129fb4eac4472eb1f4b0a8a6203e4234b675a5408",
+          "frames": 1652,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 27.533333333333335,
+          "poster": "assets/images/dataset1118-g0088-off.webp",
+          "poster_sha256": "8ff7a60ea58fcc65f0277cf0abd568b6096ff9e81e0f2ad75447f8b7e9620176",
+          "poster_bytes": 55298,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "g-0088",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0088",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "gtav/test/pairs/pair_0088/positive/episode/video.mp4",
+          "source_sha256": "422ab7d8ac91f9eeca4bad2529941931da54ec3e47c8dd2e5fe9a92b114e0cc9",
+          "source_bytes": 8627354,
+          "file": "assets/videos/dataset1118-g0088-on.mp4",
+          "bytes": 2589014,
+          "sha256": "54314f7b34425e77b1b7dd05e1a45d8032964b7b61ac3e4614447cdf426616ae",
+          "frames": 1652,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 27.533333333333335,
+          "poster": "assets/images/dataset1118-g0088-on.webp",
+          "poster_sha256": "fa531c95e87d0fc36f41191f34721182459622b56af0a6eba5d474bcc58bcc39",
+          "poster_bytes": 50474,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-g-0189",
+        "prefix": "dataset1118-g0189",
+        "category": "gtav",
+        "title": "Approach the car",
+        "heading": "Approach the car → driver door opens",
+        "duration": 20.083333333333332,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "automatic driver-door opening",
+        "sourcePair": "pair_0189",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "vehicle_door",
+        "mode": "paired",
+        "number": 8
+      },
+      "split": "test",
+      "pair": "pair_0189",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：受控人物（actor）、vehicle_1（vehicle_1）（vehicle_1）。\n\n规则 r1：当受控人物（actor）与vehicle_1（vehicle_1）（vehicle_1）的水平距离不大于3.0米时，打开vehicle_1（vehicle_1）（vehicle_1）的左前门。\n条件不成立时不触发；每条规则只触发一次，不自动回退。任务与物理过程自然演化，不保证位置、速度或行为过程永久不变。\n优先级：1（高者优先；同优先级按规则编号顺序）。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "spatial",
+            "entity": "actor",
+            "target": "vehicle_1",
+            "test": "within",
+            "radius": 3.0
+          },
+          "mode": "once",
+          "priority": 1,
+          "effects": [
+            {
+              "op": "vehicle_door",
+              "target": "vehicle_1",
+              "index": 0,
+              "open": true
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "g-0189",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0189",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "gtav/test/pairs/pair_0189/negative/episode/video.mp4",
+          "source_sha256": "9c502fb5fffb4b342a7437f1f27d63cbc7efef43640d255f40c433437a1953df",
+          "source_bytes": 6284479,
+          "file": "assets/videos/dataset1118-g0189-off.mp4",
+          "bytes": 2695833,
+          "sha256": "6a3774fb999d2806ec01d5ea0445aab68bd8367df6664ec33282ae9b29727b9c",
+          "frames": 1205,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 20.083333333333332,
+          "poster": "assets/images/dataset1118-g0189-off.webp",
+          "poster_sha256": "18db6616bf609b281e6ec375f2f68e449e2c1107ff419d480140a953a1ab12a7",
+          "poster_bytes": 55072,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "g-0189",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0189",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "gtav/test/pairs/pair_0189/positive/episode/video.mp4",
+          "source_sha256": "5b9711ae3ab29922cd4718701414df63be7d2fb28e9643ec3e731994ee0cb262",
+          "source_bytes": 6314635,
+          "file": "assets/videos/dataset1118-g0189-on.mp4",
+          "bytes": 2917900,
+          "sha256": "b43774e2db69e871d9ba1fd90faeb57690ddd235c53b37eff37aac38c44f5ae7",
+          "frames": 1205,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 20.083333333333332,
+          "poster": "assets/images/dataset1118-g0189-on.webp",
+          "poster_sha256": "428e311b47fc6916f165bb2369675e47032c8c983a769c17eddee0fb3139e02a",
+          "poster_bytes": 46410,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-g-0260",
+        "prefix": "dataset1118-g0260",
+        "category": "gtav",
+        "title": "Approach the character",
+        "heading": "Come within 3 metres → character disappears",
+        "duration": 21.633333333333333,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "character disappearance",
+        "sourcePair": "pair_0260",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "disappearance",
+        "mode": "paired",
+        "number": 9
+      },
+      "split": "test",
+      "pair": "pair_0260",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：受控人物（actor）、npc_1（npc_1）（npc_1）。\n\n规则 r1：当受控人物（actor）与npc_1（npc_1）（npc_1）的水平距离不大于3.0米时，npc_1（npc_1）（npc_1）消失（从场景移除实体）。\n条件不成立时不触发；每条规则只触发一次，不自动回退。任务与物理过程自然演化，不保证位置、速度或行为过程永久不变。\n优先级：1（高者优先；同优先级按规则编号顺序）。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "spatial",
+            "entity": "actor",
+            "target": "npc_1",
+            "test": "within",
+            "radius": 3.0
+          },
+          "mode": "once",
+          "priority": 1,
+          "effects": [
+            {
+              "op": "remove",
+              "target": "npc_1"
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "g-0260",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0260",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "gtav/test/pairs/pair_0260/negative/episode/video.mp4",
+          "source_sha256": "69743a8626409277f3c10fdbf0ac24e1bbc55bea5770a28b9bee8e53223adc5f",
+          "source_bytes": 6780051,
+          "file": "assets/videos/dataset1118-g0260-off.mp4",
+          "bytes": 2583189,
+          "sha256": "0d9e87e0d217aa68956a5b3815abc3247bc3beffbdacf29ff1aaa89b3c847f8b",
+          "frames": 1298,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 21.633333333333333,
+          "poster": "assets/images/dataset1118-g0260-off.webp",
+          "poster_sha256": "017df3c6d2baf42d70eed0069139528fa559c8ee8c7126be4d1c90e0499cebcc",
+          "poster_bytes": 49298,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "g-0260",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0260",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "gtav/test/pairs/pair_0260/positive/episode/video.mp4",
+          "source_sha256": "39abbde6ca257fe995d58a1a7c795c18c7ff2a99821cfb72979c7b7e37e5fa89",
+          "source_bytes": 6786512,
+          "file": "assets/videos/dataset1118-g0260-on.mp4",
+          "bytes": 2238414,
+          "sha256": "41c66f7ccf427462c36d914d0ac8d80989d80b7453ffc1b5b531bb8dd027cff0",
+          "frames": 1299,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 21.65,
+          "poster": "assets/images/dataset1118-g0260-on.webp",
+          "poster_sha256": "1937184b1157cd3baed5024f418e87a57df13bf73beb7acd46805a3c7f945d4e",
+          "poster_bytes": 50780,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-g-0763",
+        "prefix": "dataset1118-g0763",
+        "category": "gtav",
+        "title": "Aim twice at the character",
+        "heading": "Aim twice → time changes to 18:00",
+        "duration": 29.716666666666665,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "time-of-day change",
+        "sourcePair": "pair_0763",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "time_of_day",
+        "mode": "paired",
+        "number": 10
+      },
+      "split": "test",
+      "pair": "pair_0763",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：npc_1（npc_1）（npc_1）、整个场地的天气与昼夜（room）。\n\n规则 r1：当“受控人物完成“持续举枪瞄准npc_1（npc_1）（npc_1）”动作”累计至少发生2次时，全场昼夜切换到18时。\n条件不成立时不触发；每条规则只触发一次，不自动回退。任务与物理过程自然演化，不保证位置、速度或行为过程永久不变。\n优先级：1（高者优先；同优先级按规则编号顺序）。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "count",
+            "event": {
+              "op": "event",
+              "action": "aim_at",
+              "target": "npc_1",
+              "phase": "complete"
+            },
+            "at_least": 2
+          },
+          "mode": "once",
+          "priority": 1,
+          "effects": [
+            {
+              "op": "clock",
+              "target": "room",
+              "hour": 18
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "g-0763",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0763",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "gtav/test/pairs/pair_0763/negative/episode/video.mp4",
+          "source_sha256": "f592df774df73cbeb6c943a49f96e4b13be13d1914f76672322ce42eef68f37e",
+          "source_bytes": 9342971,
+          "file": "assets/videos/dataset1118-g0763-off.mp4",
+          "bytes": 3889417,
+          "sha256": "126bf17f597c1d2d00e3b2cda1d1fdaf5c4d7c5fad0e63f5d6e9196a61617e9c",
+          "frames": 1783,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 29.716666666666665,
+          "poster": "assets/images/dataset1118-g0763-off.webp",
+          "poster_sha256": "74ab94f9155a82fd01dd32f1062dc243b6bda363f1effe5dabb5dec177cb0ce3",
+          "poster_bytes": 29482,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "g-0763",
+          "domain": "gtav",
+          "split": "test",
+          "pair": "pair_0763",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "gtav/test/pairs/pair_0763/positive/episode/video.mp4",
+          "source_sha256": "823a082c3534c39b8ffb4477d54682a19dea386552bc471dd176af653411a0e1",
+          "source_bytes": 9360522,
+          "file": "assets/videos/dataset1118-g0763-on.mp4",
+          "bytes": 4236002,
+          "sha256": "a00d1b8c0732fc3689a26ccc700025d3aac3d2acd0abd3aad7579d51e50bcd7d",
+          "frames": 1784,
+          "fps": 60.0,
+          "width": 960,
+          "height": 540,
+          "duration": 29.733333333333334,
+          "poster": "assets/images/dataset1118-g0763-on.webp",
+          "poster_sha256": "f48535111c57162c1b56050df0a52b0d4a44e299a90617bcb226a1c8da2aafab",
+          "poster_bytes": 33764,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-01429",
+        "prefix": "dataset1118-h01429",
+        "category": "habitat",
+        "title": "Unlock the hallway passage",
+        "heading": "Open then close the drawer → passage unlocks",
+        "duration": 21.766666666666666,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "hallway passage unlocking",
+        "sourcePair": "pair_01429",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "route_state",
+        "mode": "paired",
+        "number": 5
+      },
+      "split": "test",
+      "pair": "pair_01429",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：Kitchen island cabinet drawer、passage to hallway。\n\n规则 r1：当依次发生：受控人物完成“打开Kitchen island cabinet drawer”动作，然后受控人物完成“关闭Kitchen island cabinet drawer”动作时，开放passage to hallway，对应障碍物随之改变。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。\n\n目标：passage to hallway的是否打开等于是。视频结束时仍须成立。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "sequence",
+            "events": [
+              {
+                "op": "event",
+                "action": "open",
+                "target": "part_0642197930",
+                "phase": "complete"
+              },
+              {
+                "op": "event",
+                "action": "close",
+                "target": "part_0642197930",
+                "phase": "complete"
+              }
+            ]
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "route_state",
+              "target": "passage_route_a156836f39",
+              "open": true
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-01429",
+          "domain": "habitat",
+          "split": "test",
+          "pair": "pair_01429",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/test/pairs/pair_01429/negative/episode/reference.mp4",
+          "source_sha256": "1033314367e8960b3954106f576eb4878466b4d52b79a960bb57c5c7cbc586f4",
+          "source_bytes": 2932842,
+          "file": "assets/videos/dataset1118-h01429-off.mp4",
+          "bytes": 1492765,
+          "sha256": "6ebb4edcc7d3aced458243776d29f5d09c726e439357bb918d74edc89f2bf0cd",
+          "frames": 653,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 21.766666666666666,
+          "poster": "assets/images/dataset1118-h01429-off.webp",
+          "poster_sha256": "65ebd88da2578d5d1397f8b458b42c88a67abbf68899cf7ee24a4e3fd0e13892",
+          "poster_bytes": 12046,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-01429",
+          "domain": "habitat",
+          "split": "test",
+          "pair": "pair_01429",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/test/pairs/pair_01429/positive/episode/reference.mp4",
+          "source_sha256": "23610ab2c9d3be0a883852dbcef518511c1e1afaca3695fc6d7db432d4dcfd99",
+          "source_bytes": 2928740,
+          "file": "assets/videos/dataset1118-h01429-on.mp4",
+          "bytes": 1500285,
+          "sha256": "618638f4276194bfbfc6c1e376624e6d2d54da35a59400f979731740c20b2856",
+          "frames": 653,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 21.766666666666666,
+          "poster": "assets/images/dataset1118-h01429-on.webp",
+          "poster_sha256": "65ebd88da2578d5d1397f8b458b42c88a67abbf68899cf7ee24a4e3fd0e13892",
+          "poster_bytes": 12046,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-00525",
+        "prefix": "dataset1118-h00525",
+        "category": "habitat",
+        "title": "Open the oven remotely",
+        "heading": "Open the drawer → oven door opens",
+        "duration": 20.8,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "linked oven-door opening",
+        "sourcePair": "pair_00525",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "joint",
+        "mode": "paired",
+        "number": 6
+      },
+      "split": "test",
+      "pair": "pair_00525",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：Kitchen island cabinet drawer、Range and oven door。\n\n规则 r1：当受控人物完成“打开Kitchen island cabinet drawer”动作时，打开Range and oven door。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。\n\n目标：Range and oven door的是否打开等于是。视频结束时仍须成立。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "event",
+            "action": "open",
+            "target": "part_0642197930",
+            "phase": "complete"
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "joint",
+              "target": "part_0c8078f584",
+              "open": true
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-00525",
+          "domain": "habitat",
+          "split": "test",
+          "pair": "pair_00525",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/test/pairs/pair_00525/negative/episode/reference.mp4",
+          "source_sha256": "46447fa151940cfe5990308a53285efba9f0b601a3200ffe320b850598eb5a35",
+          "source_bytes": 3745839,
+          "file": "assets/videos/dataset1118-h00525-off.mp4",
+          "bytes": 1805108,
+          "sha256": "1f3c743d755ebab279375282ec308aa9769d7c8fbc03fea98d03561d74fc6628",
+          "frames": 624,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 20.8,
+          "poster": "assets/images/dataset1118-h00525-off.webp",
+          "poster_sha256": "a5bd5c5027f468962a332ff1b536c286cca1a2c54c13409cf5bd6cf25b96b445",
+          "poster_bytes": 18562,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-00525",
+          "domain": "habitat",
+          "split": "test",
+          "pair": "pair_00525",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/test/pairs/pair_00525/positive/episode/reference.mp4",
+          "source_sha256": "96e7fc88ebf0ad802eb10fe07ed845d6bfb2b7e6e7a572f8f77f1e04bb68e9bc",
+          "source_bytes": 3745189,
+          "file": "assets/videos/dataset1118-h00525-on.mp4",
+          "bytes": 1806508,
+          "sha256": "34f8afa8c7d35c6066e889d96a7b7361b178b3950dbee2b213b3c92413ca7492",
+          "frames": 624,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 20.8,
+          "poster": "assets/images/dataset1118-h00525-on.webp",
+          "poster_sha256": "a5bd5c5027f468962a332ff1b536c286cca1a2c54c13409cf5bd6cf25b96b445",
+          "poster_bytes": 18562,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-00156",
+        "prefix": "dataset1118-h00156",
+        "category": "habitat",
+        "title": "Rotate the hall stand",
+        "heading": "Leave the laundry room → hall stand rotates 90°",
+        "duration": 16.066666666666666,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "hall-stand rotation",
+        "sourcePair": "pair_00156",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "rotate",
+        "mode": "paired",
+        "number": 7
+      },
+      "split": "train",
+      "pair": "pair_00156",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：受控人物、Layne hall stand and storage bench、laundryroom/mudroom。\n\n规则 r1：当受控人物离开laundryroom/mudroom时，Layne hall stand and storage bench绕轴[0, 1, 0]旋转90度。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。\n\n目标：Layne hall stand and storage bench的姿态相对初始状态发生变化。视频结束时仍须成立。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "region",
+            "entity": "actor",
+            "region": "room_region_3cd91f5ab6",
+            "test": "exit"
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "rotate",
+              "target": "object_81aabcc068",
+              "axis": [
+                0,
+                1,
+                0
+              ],
+              "degrees": 90
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-00156",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00156",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/train/pairs/pair_00156/negative/episode/reference.mp4",
+          "source_sha256": "1b505bd2a4a3ab8c4d17eb007c8a14ed2e5c876a58539def040408ce7b375c95",
+          "source_bytes": 4032884,
+          "file": "assets/videos/dataset1118-h00156-off.mp4",
+          "bytes": 1889823,
+          "sha256": "00350424837dcea2a38157b8a0c7ed60a1b0ff43994205b78720efefde780f00",
+          "frames": 482,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 16.066666666666666,
+          "poster": "assets/images/dataset1118-h00156-off.webp",
+          "poster_sha256": "2f868b026c25c8eac887811a440f958b13b126e9b527a0dcd3331b9261f97a19",
+          "poster_bytes": 25596,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-00156",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00156",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/train/pairs/pair_00156/positive/episode/reference.mp4",
+          "source_sha256": "f0d4e65dac31a5f18ea38d06fa9292dca656820f7635a102f985315148325029",
+          "source_bytes": 4011561,
+          "file": "assets/videos/dataset1118-h00156-on.mp4",
+          "bytes": 1880329,
+          "sha256": "3893404f9e41c8582bdc7053ffa9a323534df39f3b7fdbcc6e158bf22cc65860",
+          "frames": 482,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 16.066666666666666,
+          "poster": "assets/images/dataset1118-h00156-on.webp",
+          "poster_sha256": "2f868b026c25c8eac887811a440f958b13b126e9b527a0dcd3331b9261f97a19",
+          "poster_bytes": 25596,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-00971",
+        "prefix": "dataset1118-h00971",
+        "category": "habitat",
+        "title": "Reshape the laundry rack",
+        "heading": "Enter the laundry room → laundry rack tapers",
+        "duration": 14.1,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "laundry-rack deformation",
+        "sourcePair": "pair_00971",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "deform",
+        "mode": "paired",
+        "number": 8
+      },
+      "split": "train",
+      "pair": "pair_00971",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：受控人物、Whitmor Laundry Center With Mesh Laundry Bag、laundryroom/mudroom。\n\n规则 r1：当受控人物进入laundryroom/mudroom时，Whitmor Laundry Center With Mesh Laundry Bag发生渐缩，幅度0.35。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。\n\n目标：Whitmor Laundry Center With Mesh Laundry Bag的形状相对初始状态发生变化。视频结束时仍须成立。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "region",
+            "entity": "actor",
+            "region": "room_region_b0f6cf4b8d",
+            "test": "enter"
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "deform",
+              "target": "object_9409638b0d",
+              "mode": "taper",
+              "amount": 0.35
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-00971",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00971",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/train/pairs/pair_00971/negative/episode/reference.mp4",
+          "source_sha256": "b03d4ba78b18a1efe9ad33c9336b2ad05295277657fc9a89f01b44784eb5d2bd",
+          "source_bytes": 3123544,
+          "file": "assets/videos/dataset1118-h00971-off.mp4",
+          "bytes": 1433867,
+          "sha256": "e5e85fa50a4d97ae88e45fb63795d881c90c1fde9dd036da20d80e1b7e785f57",
+          "frames": 423,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 14.1,
+          "poster": "assets/images/dataset1118-h00971-off.webp",
+          "poster_sha256": "2975cf75bf1d89bc6ba99f461c46acc2b22ff8d7a44a66299d687801f8c5799e",
+          "poster_bytes": 5760,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-00971",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00971",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/train/pairs/pair_00971/positive/episode/reference.mp4",
+          "source_sha256": "913b0a8949affc406c04b6271e38786e1acd2b6f07855b4132e54a5140f12229",
+          "source_bytes": 3126976,
+          "file": "assets/videos/dataset1118-h00971-on.mp4",
+          "bytes": 1433963,
+          "sha256": "06d5af54c1ec0be61c2a8409c3da22d557456604a7b9fd8371aadf404be8af32",
+          "frames": 423,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 14.1,
+          "poster": "assets/images/dataset1118-h00971-on.webp",
+          "poster_sha256": "2975cf75bf1d89bc6ba99f461c46acc2b22ff8d7a44a66299d687801f8c5799e",
+          "poster_bytes": 5760,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-00688",
+        "prefix": "dataset1118-h00688",
+        "category": "habitat",
+        "title": "Make the TV transparent",
+        "heading": "Hold the phone → TV becomes transparent",
+        "duration": 34.93333333333333,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "TV transparency",
+        "sourcePair": "pair_00688",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "opacity",
+        "mode": "paired",
+        "number": 9
+      },
+      "split": "train",
+      "pair": "pair_00688",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：MWB Standard - IP Phone、'' Led TV。\n\n规则 r1：当MWB Standard - IP Phone的是否被持有等于是时，'' Led TV的不透明度变为0.2。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "state",
+            "entity": "object_7ee05b69ed",
+            "key": "held",
+            "compare": "eq",
+            "value": true
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "opacity",
+              "target": "object_b0698c1dcd",
+              "value": 0.2
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-00688",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00688",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/train/pairs/pair_00688/negative/episode/reference.mp4",
+          "source_sha256": "4636f7ae5035837f843dd429253fa08aff737410a00078ee474ecaabdf58814f",
+          "source_bytes": 7772154,
+          "file": "assets/videos/dataset1118-h00688-off.mp4",
+          "bytes": 3894333,
+          "sha256": "7f9088a4619a55a22417af4d4ca2a94f49ae13eb8ba16e5c5bca7caea6d55bc6",
+          "frames": 1048,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 34.93333333333333,
+          "poster": "assets/images/dataset1118-h00688-off.webp",
+          "poster_sha256": "41b1faa13c1cbfe39ad9a28c3d0ff5889f4ddf442abcf64a401c8cfbefb5f4be",
+          "poster_bytes": 24884,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-00688",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_00688",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/train/pairs/pair_00688/positive/episode/reference.mp4",
+          "source_sha256": "e0bf46c9c92a5a7cc37fc65a078fecc2e682666cdf3e3e23a7627f7f761ea931",
+          "source_bytes": 7749755,
+          "file": "assets/videos/dataset1118-h00688-on.mp4",
+          "bytes": 3891136,
+          "sha256": "570c632228a9a33e6dfed21222b73e112b99591b692b468f8f4ae025a50f58fb",
+          "frames": 1048,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 34.93333333333333,
+          "poster": "assets/images/dataset1118-h00688-on.webp",
+          "poster_sha256": "41b1faa13c1cbfe39ad9a28c3d0ff5889f4ddf442abcf64a401c8cfbefb5f4be",
+          "poster_bytes": 24884,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    },
+    {
+      "display": {
+        "id": "dataset-h-02305",
+        "prefix": "dataset1118-h02305",
+        "category": "habitat",
+        "title": "Move the coffee maker",
+        "heading": "Open then close the cabinet → coffee maker moves",
+        "duration": 24.8,
+        "kind": "RULEVERSE DATASET",
+        "label": "Rule",
+        "accessible": "coffee-maker displacement",
+        "sourcePair": "pair_02305",
+        "implementation": "ruleverse-original-recording",
+        "sourceType": "dataset",
+        "ruleCategory": "translate",
+        "mode": "paired",
+        "number": 10
+      },
+      "split": "train",
+      "pair": "pair_02305",
+      "dataClass": "custom_rule",
+      "ruleText": "对象：Delonghi Filter Coffee Maker、Cabinet door。\n\n物理环境：规则先完成指定平移；自由物体随后受重力与碰撞影响，自然下落、侧倒或停在支撑面上。平移终点不固定悬空。被人物持有或连接的物体仍受相应约束。\n\n规则 r1：当依次发生：受控人物完成“打开Cabinet door”动作，然后受控人物完成“关闭Cabinet door”动作时，Delonghi Filter Coffee Maker发生移动。\n条件不成立时：不触发本条后果，不撤销已发生的结果。\n持续与恢复：首次触发后保持，不自动恢复；后续明确动作或其他规则可改变该状态。\n优先级：0（高者优先；同优先级按规则编号顺序）。\n\n目标：Delonghi Filter Coffee Maker相对初始位置发生明显移动。视频结束时仍须成立。",
+      "rules": [
+        {
+          "id": "r1",
+          "when": {
+            "op": "sequence",
+            "events": [
+              {
+                "op": "event",
+                "action": "open",
+                "target": "part_356791b589",
+                "phase": "complete"
+              },
+              {
+                "op": "event",
+                "action": "close",
+                "target": "part_356791b589",
+                "phase": "complete"
+              }
+            ]
+          },
+          "mode": "once",
+          "priority": 0,
+          "effects": [
+            {
+              "op": "translate",
+              "target": "object_9d9bb73a35",
+              "offset": [
+                0.0,
+                0.0,
+                0.45
+              ]
+            }
+          ]
+        }
+      ],
+      "nativeRule": null,
+      "media": [
+        {
+          "id": "h-02305",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_02305",
+          "arm": "off",
+          "rules_enabled": false,
+          "source": "habitat/train/pairs/pair_02305/negative/episode/reference.mp4",
+          "source_sha256": "2fdaac6bc4854ba840e7ca8aab0876abe36dcea2823834120da86e89e472a046",
+          "source_bytes": 5627570,
+          "file": "assets/videos/dataset1118-h02305-off.mp4",
+          "bytes": 2776002,
+          "sha256": "dca7c183ceb8cdf36e247316621e8e82c3385a0d0a120a0ddc5fd00bea6ff398",
+          "frames": 744,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 24.8,
+          "poster": "assets/images/dataset1118-h02305-off.webp",
+          "poster_sha256": "5d9900bf6c7030765b9fa6ce16cf3ffebe93be407e25157c1f73879fb0102e75",
+          "poster_bytes": 22172,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        },
+        {
+          "id": "h-02305",
+          "domain": "habitat",
+          "split": "train",
+          "pair": "pair_02305",
+          "arm": "on",
+          "rules_enabled": true,
+          "source": "habitat/train/pairs/pair_02305/positive/episode/reference.mp4",
+          "source_sha256": "9738a5b7290566a3c04ea1e9bafe51627604a168f604b92375cca07b26cda3d7",
+          "source_bytes": 5619309,
+          "file": "assets/videos/dataset1118-h02305-on.mp4",
+          "bytes": 2775090,
+          "sha256": "824ae1e5caa253463258b4e6ffe7bd9c53b94a5ace1a6cdd41f01ba573a1b8fd",
+          "frames": 744,
+          "fps": 30.0,
+          "width": 800,
+          "height": 480,
+          "duration": 24.8,
+          "poster": "assets/images/dataset1118-h02305-on.webp",
+          "poster_sha256": "5d9900bf6c7030765b9fa6ce16cf3ffebe93be407e25157c1f73879fb0102e75",
+          "poster_bytes": 22172,
+          "source_type": "original_dataset_recording",
+          "encoding": {
+            "codec": "H.264",
+            "crf": 24,
+            "preset": "medium",
+            "pixel_format": "yuv420p",
+            "faststart": true,
+            "frame_order": "preserved",
+            "duration": "complete",
+            "audio": "omitted"
+          }
+        }
+      ]
+    }
+  ]
+}
